@@ -11,13 +11,12 @@ API_TOKEN = '975829266:AAHpFXyeGSfBNv-jpfYwUwsLPMph4DCDxK4'
 # задаем уровень логов
 logging.basicConfig(level=logging.INFO)
 # инициализируем бота
-bot = Bot(token=config.API_TOKEN)
+bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 # инициализируем соединение с БД
 db = SQLighter('db.db')
 # инициализируем парсер
 kwork = KWork('last_key.txt')
-
 
 
 # Команда активации подписки
